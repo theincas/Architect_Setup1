@@ -34,25 +34,35 @@ UI
 This is a draft of my own architecture. It basically provides a clear architecture based on SOLID principles.
 
 
-[ UI Layer ] ---------------------------┐
+┌────────────────────┐
+│     UI Layer       │
+│  (WebUI, Controllers) 
+└────────┬───────────┘
 
-    (WebUI, Controllers)               |
-    
-                ↓                     |
-                
-[ Application Layer ] <-------------┐ |
+         ↓
+         
+┌────────────────────┐
+│ Application Layer  │
+│ (UseCases, DTOs,   │
+│  Interfaces)       │
+└────────┬───────────┘
 
-    (UseCases, DTOs, Interfaces)    | |
-    
-                ↓                  | |
-                
-[ Domain Layer ]                   | |
+         ↓
+         
+┌────────────────────┐
+│   Domain Layer      │
+│ (Entities,          │
+│  ValueObjects,      │
+│  Enums)             │
+└────────▲───────────┘
 
-    (Entities, ValueObjects)       | |
-    
-                                   | |
-                                   
-[ Infrastructure Layer ] ----------┘ |
-
-    (Persistence, EfRepositories,   |
+         │
+         │
+         
+┌────────┴───────────┐
+│ Infrastructure Layer │
+│ (Persistence,         │
+│  EF Repositories,     │
+│  External Services)   │
+└──────────────────────┘
     
