@@ -1,5 +1,6 @@
 Core
 ├── Application
+
 │   ├── DTOs
 │   ├── Commands
 │   ├── Queries
