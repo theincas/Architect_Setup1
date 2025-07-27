@@ -59,9 +59,11 @@ This is a draft of my own architecture. It basically provides a clear architectu
          │
          │
 
-│ Infrastructure Layer │
+┌────────┴──────────────┐
+
+│ Infrastructure Layer  │
 │ (Persistence,         │
 │  EF Repositories,     │
 │  External Services)   │
-└──────────────────────┘
+└───────────────────────┘
     
