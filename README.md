@@ -58,7 +58,7 @@ This is a draft of my own architecture. It basically provides a clear architectu
 
          │
          │
-         
+
 ┌────────┴───────────┐
 │ Infrastructure Layer │
 │ (Persistence,         │
